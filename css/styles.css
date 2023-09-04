@@ -132,11 +132,12 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 800px;
+    align-items: stretch;
   }
 
   .vehicles .vehicle-card {
     flex: 1;
-    padding: 2rem;
+    padding: 1.8rem;
   }
 
   .vehicle-card button {
