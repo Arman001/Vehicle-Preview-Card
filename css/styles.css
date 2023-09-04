@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* ___COLORS___ */
+  /* PRIMARY */
+  --BRIGHT-ORANGE: hsl(31, 77%, 52%);
+  --DARK-CYAN: hsl(184, 100%, 22%);
+  --VERY-DARK-CYAN: hsl(179, 100%, 13%);
+
+  /* NEUTRAL */
+  --TRANSPARENT-WHITE: hsla(0, 0%, 100%, 0.75);
+  --VRY-LIGHT-GREY: hsl(0, 0%, 95%);
+
+  /* __FONT__ */
+  /* FAMILY */
+  --FF-BIG-SHOULDERS: "Big Shoulders Display", cursive;
+  --FF-LEXEND-DECA: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--FF-LEXEND-DECA);
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--VRY-LIGHT-GREY);
+}
+
+.vehicles {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.vehicles .vehicle-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.vehicle-card img {
+  height: 30px;
+  width: 50px;
+}
+
+.vehicle-card h1 {
+  font-family: var(--FF-BIG-SHOULDERS);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--VRY-LIGHT-GREY);
+}
+
+.vehicle-card p {
+  color: var(--TRANSPARENT-WHITE);
+  line-height: 1.5rem;
+  font-size: 15px;
+
+}
+
+.vehicle-card button {
+  border-radius: 20px;
+  padding: 12px;
+  border: none;
+  max-width: 130px;
+  background: var(--VRY-LIGHT-GREY);
+  cursor: pointer;
+  border: 2px solid var(--VRY-LIGHT-GREY);
+}
+
+.vehicle-card button:hover {
+  color: var(--VRY-LIGHT-GREY);
+}
+
+.sedan {
+  background: var(--BRIGHT-ORANGE);
+}
+
+.sedan button {
+  color: var(--BRIGHT-ORANGE);
+}
+
+.sedan button:hover {
+  background: var(--BRIGHT-ORANGE);
+}
+
+.suv {
+  background: var(--DARK-CYAN);
+}
+
+.suv button {
+  color: var(--DARK-CYAN);
+}
+.suv button:hover {
+  background: var(--DARK-CYAN);
+}
+
+.luxury {
+  background: var(--VERY-DARK-CYAN);
+}
+
+.luxury button {
+  color: (--VERY-DARK-CYAN);
+}
+
+.luxury button:hover {
+  background: var(--VERY-DARK-CYAN);
+}
+
+@media (min-width: 600px) {
+  .vehicles {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .vehicles .vehicle-card {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .vehicle-card button {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
